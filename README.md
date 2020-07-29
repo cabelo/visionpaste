@@ -5,3 +5,12 @@
 ## Installation instructions:
 
 Under construction
+
+
+### The final result
+
+Bellow an example running in my machine with OpenSUSE Leap.
+
+contact : Alessandro de Oliveira Faria (A.K.A.CABELO) cabelo@opensuse.org
+
+![](img/example.gif)
