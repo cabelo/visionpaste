@@ -1,0 +1,70 @@
+swagger: "2.0"
+info:
+  description: >-
+    This is a vision service plugin for gimp.  You can find out more about it at [cabelo@opensuse.org](cabelo@opensuse.org).
+  version: "1.0"
+  title: "Vision Paste"
+  termsOfService: 'http://assuntonerd.com.br/terms/'
+  contact:
+    email: cabelo@opensuse.org
+  license:
+    name: BSD-3
+    url: 'https://opensource.org/licenses/BSD-3-Clause'
+
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+
+host: '192.168.0,4:8080'
+
+basePath: /
+
+paths:
+  /version/:
+    get:
+      operationId: api.version.read
+      responses:
+        200:
+          description: 'Fetch a list of items'
+          schema:
+            $ref: '#/definitions/Version'
+
+  /image:
+    post:
+      operationId: api.capture.post
+      tags:
+      - Image
+      summary: Send base64 image
+      description:s Send base64 image to crop object  with semantic segmentation.
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - name: data
+        in: body
+        schema:
+          type: object
+          properties:
+            name:
+              type: string
+      responses:
+        200:
+          description: Image sent and processed successfully!
+          schema:
+            $ref: '#/definitions/Image'
+        401:
+          description: Error during processing
+definitions:
+  Image:
+    type: object
+    properties:
+      data:
+        type: string
+  Version:
+    type: object
+    properties:
+      version:
+        type: string
+

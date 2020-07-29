@@ -1,0 +1,13 @@
+connexion
+ujson
+requests-toolbelt
+requests
+flask
+connexion[swagger-ui]
+torchvision
+connexion
+flask-cors
+matplotlib
+opencv-python
+future
+

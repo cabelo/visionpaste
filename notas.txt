@@ -1,0 +1,6 @@
+APIKEYINFO_FUNC=auth.passthrough python basico.py 
+
+use a url: http://localhost:8080/
+openssl req -x509 -newkey rsa:4096 -nodes -out cert.pem -keyout key.pem -days 365
+qrencode -o  aipaste.jpg -s 6 'https://192.168.0.4:8080'
+

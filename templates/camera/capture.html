@@ -1,0 +1,31 @@
+<html>
+  <head>
+     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" http-equiv="Cache-control" content="no-cache">
+     <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Vision Paste</title>
+    <link href="{{ url_for('static', filename= './css/heimdall.css') }}"  rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <style></style>
+  </head>
+  <body>
+  <div id="faceCaptcha">
+
+    <center>
+        <div id="layer">
+          <div class="overlay" onclick="toggleFullScreen()" ></div>   
+          <video id="player" autoplay muted playsinline></video>
+        </div>
+	<div id="fc_load"><object data="{{ url_for('static', filename= './img/loading.svg') }}" type="image/svg+xml"></object></div>
+        <div id="fc_rotate"><object data="{{ url_for('static', filename= './img/rotatev.gif') }}" type="image/gif"></object></div>
+        <div id="fc_photo"></div>
+
+        <input  id="fc_initbutton1" type="image" src="{{ url_for('static', filename= './img/camera.png') }}" width="64" height="64" onclick="sendAdd()" />
+    </center>    
+  </div>
+  <canvas id="snapshot" width=480 height=640 style="display: none"></canvas>
+  <script src="{{ url_for('static', filename= './js/jquery.js') }}" ></script>
+  <script src="{{ url_for('static', filename= './js/heimdall.js') }}" ></script>
+  </body>
+</html>
