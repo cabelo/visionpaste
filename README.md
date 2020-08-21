@@ -29,14 +29,15 @@ $ python3 server.py
 ```
 ### To Do
 
-[ ] Start automatic web server
-[ ] Create install script
-[ ] Generate dinamic qrcode
-[ ] Select algorithm of semantic segmantation
-[ ] Create package .rpm and .deb
-[ ] Create documantation 
-[ ] Create script for certificate generation
-[ ] Create HTML page
+- [x] Push first commit to GitHub
+- [ ] Start automatic web server
+- [ ] Create install script
+- [ ] Generate dinamic qrcode
+- [ ] Select algorithm of semantic segmantation
+- [ ] Create package .rpm and .deb
+- [ ] Create documantation 
+- [ ] Create script for certificate generation
+- [ ] Create HTML page
 
 ### The final result
 
