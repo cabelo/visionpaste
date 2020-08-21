@@ -14,26 +14,10 @@ def ai_plugin_main(timg, tdrawable):
   message.set_image(image)
   message.set_markup("Take a picture \nof qrcode and\n click Ok.")
   message.set_resizable(1)
-  #message.show()
-  #img = Gtk.Image.new_from_file('/tmp/teste.png')
   message.show_all()
   message.run()
   message.destroy()
   
-  #gimp.quit()
-
-  #gtk.main()
-  #window = gtk.Window(gtk.WINDOW_TOPLEVEL)
-  #window.set_title('AI Segmentation Semantic')
-  #window.set_size_request(640, 480)
-  #pic = gtk.gdk.pixbuf_new_from_file('/tmp/teste.png')
-  #image = gtk.Image()
-  #image.set_from_pixbuf(pic)
-  #vbox = gtk.VBox()
-  #vbox.pack_start (image)
-  #window.add(vbox)
-  #window.show_all()
-
   pdb.gimp_message("AI Segmentation Semantic")
   t = 0
   while t<30:
