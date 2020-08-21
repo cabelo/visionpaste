@@ -38,6 +38,7 @@ $ python3 server.py
 - [ ] Create documantation 
 - [ ] Create script for certificate generation
 - [ ] Create HTML page
+- [ ] Add background effects
 
 ### The final result
 
