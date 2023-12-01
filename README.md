@@ -4,6 +4,17 @@
 
 Is an artificial intelligence plug-in for computer graphics software GIMP. The project uses the semantic segmentation feature of computer vision with deep learning to capture the photo from the cell phone, send it to the AI core to cut the scene object and automatically send it to the image editor.
 
+# Methodology / Approach
+Vision Paste is a plug-in for computer graphics software GIMP, to paste the photos taken on the phone into the editor. Automatically cropping the object with AI.
+
+## Overview / Usage
+
+Is an artificial intelligence plug-in for computer graphics software GIMP. The project uses the semantic segmentation feature of computer vision with deep learning to capture the photo from the cell phone, send it to the AI core to cut the scene object and automatically send it to the image editor.
+
+## Methodology / Approach
+
+Semantic segmentation was used to cut out the objects. The opencv library was used to process the main tasks.
+
 ## Installation instructions:
 
 ***Under construction***
